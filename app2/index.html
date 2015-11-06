@@ -5,7 +5,16 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body ng-app="insultApp">
+
+	<div ng-controller="insultCtrl">
+		<div>
+			<button ng-click="getInsult()">Request an Insult</button>
+			{{insult}}
+		</div>
+
+
+	</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
   <script src="app.js"></script>
